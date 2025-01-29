@@ -1,0 +1,57 @@
+---
+title: "Week1"
+---
+
+# Summary
+
+## Introduction to Remote Sensing
+
+-   Remote sensing is defined as acquiring information from a distance such as sattellites, planes, drones, or hand held devices.
+
+-   In the context of geospatial analysis, remote sensing refers to data acquired from the sensor in earth's satellites.
+
+-   Remote sensing data is categorized as raster data type.
+
+-   There are two types of sensors: passive and active.
+
+-   The passive sensors detect and measure radiation of natural energy that is reflected from the Earth's surface. The passive sensors relies heavily on the sun therefore it is limited to only work on daytime, sensitive to weather condition and can not penetrate cloud.
+
+-   The active sensors can generate and transmit their own energy source such as radar. Unlike passive sensors, active sensors are not affected by daytime, weather, and cloud. However, processing this type of sensor is more complex.
+
+-   Electronic magnetic wave is an energy that travels through the light.
+
+-   Every earth's feature has it's own signature characteristic.
+
+-   There are three types of atmospheric scattering which is based on their size: rayleigh, mie, and non selective.
+
+-   The sky color is blue because blue length is shorter and easier to scatter.
+
+-   Red has the longest wavelength for visible light.
+
+-   Scattering can not happens where there is no atmosphere such as in moon.
+
+-   SAR is an example of the active sensors . It has longer wavelength that it can penetrate the cloud.
+
+-   There are 4 types of resolution: spatial, spectral, temporal, and radiometric.
+
+-   Spatial resolution refers to the size of the raster grid per pixel. High resolution satellite images has spatial resolution up to cm to 1 meter, meanwhile common sensors such as Landsat (30 m) and Sentinel are categorized as medium resolution.
+
+-   Spectral resolution explain the number of bands a sensor has. For example Landsat 8 has 9 spectral bands.
+
+-   Temporal resolution is the time a sensor revisits a place on earth. The temporal resolution of sentinel is 5 days.
+
+-   Radiometric resolution identify differences in light or reflectance or in short tell the number of possible value such as 8 bit or 11 bit. However, it doesn't mean sensitivity.
+
+-   Landsat and sentinel has different spectral signature because it orbits at different time and temporal resolution and slightly different band.
+
+-   There are three types of satellite orbit: geosynchronous orbit, geostationary orbit, and sunsynchronous orbit.
+
+-   Geosynchronous orbit satellite matches the earth's rotation.
+
+-   Geostationary orbit holds same position and usually only for communication.
+
+-   Sunsynchronous orbit satellite is in sync with the sun, therefore it pass over the same spot at the same time each day.
+
+-   Resampling is a process of interpolating new pixel value when the data's resolution. There are some methods to do the resampling including nearest neighbour, billinear interpolation, cubic convolution, and lanczos resampling.
+
+-   Upsampling is the process of increasing raster's spatial resolution by decreasing the pixel size, meanwhile downsampling reduces the spatial resolution by increasing the pixel size.

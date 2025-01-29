@@ -2,14 +2,21 @@ project:
   type: book
 
 book:
-  title: "LearningDiary"
-  author: "Norah Jones"
-  date: "1/29/2025"
+  title: "Learning Diary - CASA0023: Remotely Sensing Cities and Environment"
+  author: "Jasmine Mahdani"
+  ID: "24067805"
   chapters:
-    - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - Introduction.qmd
+    - Week1.qmd
+    - Week2.qmd
+    - Week3.qmd
+    - Week4.qmd
+    - Week5.qmd
+    - Week6.qmd
+    - Week7.qmd
+    - Week8.qmd
+    - Week9.qmd
+    - Week10.qmd
 
 bibliography: references.bib
 

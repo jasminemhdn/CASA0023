@@ -3,7 +3,7 @@
     "path": "D:/UCL/CASA0023/LearningDiary/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "0",
+    "hash": "630123198",
     "contents": "",
     "dirty": false,
     "created": 1738162988622.0,
@@ -11,14 +11,16 @@
     "relative_order": 2,
     "properties": {
         "source_window_id": "",
-        "Source": "Source"
+        "Source": "Source",
+        "cursorPosition": "8,22",
+        "scrollLine": "2"
     },
     "folds": "",
-    "lastKnownWriteTime": 1738162985,
+    "lastKnownWriteTime": 1738165459,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1738162985,
+    "last_content_update": 1738165459511,
     "read_only": false,
     "read_only_alternatives": []
 }

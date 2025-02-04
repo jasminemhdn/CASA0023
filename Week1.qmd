@@ -1,57 +1,19 @@
 ---
-title: "Week1"
+title: "Week 1: Introduction to Remote Sensing"
 ---
 
-# Summary
+# Introduction to Remote Sensing
 
-## Introduction to Remote Sensing
+## Remote Sensing Definition and How it Works
 
--   Remote sensing is defined as acquiring information from a distance such as sattellites, planes, drones, or hand held devices.
+Generally, remote sensing is defined as acquiring information from a distance such as satellites, planes, drones, or handheld devices. Ruth DeFries (2013) describes remote sensing as the practice of obtaining information about the Earth’s surface, using images acquired from airborne or spaceborne vehicles by measuring reflected, emitted, or returned electromagnetic radiation. In the context of geospatial analysis, remote sensing refers to data acquired from the sensor in earth’s satellite.
 
--   In the context of geospatial analysis, remote sensing refers to data acquired from the sensor in earth's satellites.
+Remote sensing mainly captures the electromagnetic (EM) radiation that is reflected from earth’s surface. EM wave is an energy that travels through the light. All matters with absolute temperature above zero (0 K) reflect and emit EM waves of various length (J. M. Read and M. Torrado, 2009). A material that fully capable of absorbing and re-emitting all EM energy that it receives is called a blackbody, but it is very rare and most natural objects only absorb some of the energy (Tempfli K. et al., 2009). The difference in how objects absorb and reflect energy is what’s make every earth’s feature has it’s own signature characteristic. This signature characteristic is recorded as digital number (DN) in each pixel of remote sensing data using the sensors.
 
--   Remote sensing data is categorized as raster data type.
+In remote sensing, there are lots of sensors that mainly categorized as two types, passive and active and they are used for different applications (*insert citation*). Most sensors use passive systems which can only capture the reflection of sun’s energy and work during daylight.  The orbit of this type of sensors sometimes are set to follow’s the sun which called sun synchronous. The electromagnetic spectrum recorded by the sensors range from ultraviolet (UV), visible (red, green, blue), infrared (IR), and microwave. Meanwhile, active remote sensing can radiate it’s own energy and measure the amount of radiation returned to the sensor. This type of sensors commonly can penetrate through clouds and won’t be affected by daylight or weather conditions. Example of active sensors included SAR and LIDAR.
 
--   There are two types of sensors: passive and active.
+Although remote sensing is great for collecting data in inaccessible area and relatively cheaper for mapping large areas, there are 4 type of resolution that needs to be considered when using: spatial, spectral, temporal, and radiometric. Spatial resolution refers to the size of area measured which is represented by each pixel. Spectral refer to the range of wavelength the sensor is sensitive to. Radiometric refer to the difference in radiation intensity, but it does not mean sensitivity. Temporal characteristics refer to the time of image acquisition. These resolutions need to be considered based on the purpose of the mapping.
 
--   The passive sensors detect and measure radiation of natural energy that is reflected from the Earth's surface. The passive sensors relies heavily on the sun therefore it is limited to only work on daytime, sensitive to weather condition and can not penetrate cloud.
+## Example of Landsat and Sentinel Reflectance
 
--   The active sensors can generate and transmit their own energy source such as radar. Unlike passive sensors, active sensors are not affected by daytime, weather, and cloud. However, processing this type of sensor is more complex.
-
--   Electronic magnetic wave is an energy that travels through the light.
-
--   Every earth's feature has it's own signature characteristic.
-
--   There are three types of atmospheric scattering which is based on their size: rayleigh, mie, and non selective.
-
--   The sky color is blue because blue length is shorter and easier to scatter.
-
--   Red has the longest wavelength for visible light.
-
--   Scattering can not happens where there is no atmosphere such as in moon.
-
--   SAR is an example of the active sensors . It has longer wavelength that it can penetrate the cloud.
-
--   There are 4 types of resolution: spatial, spectral, temporal, and radiometric.
-
--   Spatial resolution refers to the size of the raster grid per pixel. High resolution satellite images has spatial resolution up to cm to 1 meter, meanwhile common sensors such as Landsat (30 m) and Sentinel are categorized as medium resolution.
-
--   Spectral resolution explain the number of bands a sensor has. For example Landsat 8 has 9 spectral bands.
-
--   Temporal resolution is the time a sensor revisits a place on earth. The temporal resolution of sentinel is 5 days.
-
--   Radiometric resolution identify differences in light or reflectance or in short tell the number of possible value such as 8 bit or 11 bit. However, it doesn't mean sensitivity.
-
--   Landsat and sentinel has different spectral signature because it orbits at different time and temporal resolution and slightly different band.
-
--   There are three types of satellite orbit: geosynchronous orbit, geostationary orbit, and sunsynchronous orbit.
-
--   Geosynchronous orbit satellite matches the earth's rotation.
-
--   Geostationary orbit holds same position and usually only for communication.
-
--   Sunsynchronous orbit satellite is in sync with the sun, therefore it pass over the same spot at the same time each day.
-
--   Resampling is a process of interpolating new pixel value when the data's resolution. There are some methods to do the resampling including nearest neighbour, billinear interpolation, cubic convolution, and lanczos resampling.
-
--   Upsampling is the process of increasing raster's spatial resolution by decreasing the pixel size, meanwhile downsampling reduces the spatial resolution by increasing the pixel size.
+Landsat program is the longest running project for acquisition of repetitive multispectral data of the Earth’s surface with as Landsat 1 the first space-based satellite for it. The current Landsat satellite that still operates are Landsat 8 and Landsat 9 with the recorded data from earlier Landsat mission are still being used in many remote-sensing applications.

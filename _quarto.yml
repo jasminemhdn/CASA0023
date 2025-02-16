@@ -4,19 +4,13 @@ project:
 book:
   title: "Learning Diary - CASA0023: Remotely Sensing Cities and Environment"
   author: "Jasmine Mahdani"
-  ID: "24067805"
   chapters:
-    - Introduction.qmd
-    - Week1.qmd
-    - Week2.qmd
-    - Week3.qmd
-    - Week4.qmd
-    - Week5.qmd
-    - Week6.qmd
-    - Week7.qmd
-    - Week8.qmd
-    - Week9.qmd
-    - Week10.qmd
+    - index.qmd
+    - week1.qmd
+    - week2.qmd
+    - week3.qmd
+    - week4.qmd
+    - references.qmd
 
 bibliography: references.bib
 
@@ -25,6 +19,8 @@ format:
     theme:
       - cosmo
       - brand
+    number-sections: true
+    number-depth: 2
   pdf:
     documentclass: scrreprt
 

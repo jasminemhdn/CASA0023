@@ -1,6 +1,0 @@
-# Personal Introduction {.unnumbered}
-
-My name is Jasmine Mahdani, and I am an Urban Spatial Science MSc student at UCL (University College London). I graduated from ITB (Bandung Institute of Technology) in 2022, majoring in Geodetic and Geomatic Engineering. Since then, I have been actively engaged in GIS research, particularly at the urban level. My main research topics include water and sanitation access, slum identification, and disaster risk assessment. I am pursuing a master's degree to deepen my knowledge in urban analytics and to support my career path as a researcher. CASA0023: Remotely Sensing Cities and Environment is one of the modules I take along with the Urban Modelling and Simulation pathway modules in hope I can answer the challenge of using open sourced medium spatial resolution remote sensing data for urban research that mostly have small coverage area.
-
-```{}
-```

@@ -8,10 +8,12 @@ output:
   xaringan::moon_reader:
     css: xaringan-themer.css
     lib_dir: libs
+    self_contained: true
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+knit: (function(input, ...) { rmarkdown::render(input, output_dir = "docs") })
 ---
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}

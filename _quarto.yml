@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "Learning Diary - CASA0023: Remotely Sensing Cities and Environment"
@@ -21,8 +22,7 @@ format:
       - brand
     number-sections: true
     number-depth: 2
-  pdf:
-    documentclass: scrreprt
+    toc: true
 
 editor: visual
 

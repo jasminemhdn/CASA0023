@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Remote Sensing Image Corrections – Learning Diary - CASA0023: Remotely Sensing Cities and Environment</title>
+<title>3&nbsp; Remote Sensing Image Corrections and Enhancement – Learning Diary - CASA0023: Remotely Sensing Cities and Environment</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Image Corrections</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Image Corrections and Enhancement</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -127,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Image Corrections</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Image Corrections and Enhancement</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -147,15 +147,27 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary-type-of-corrections-and-enhancement" id="toc-summary-type-of-corrections-and-enhancement" class="nav-link active" data-scroll-target="#summary-type-of-corrections-and-enhancement"><span class="header-section-number">3.1</span> Summary: Type of Corrections and Enhancement</a></li>
+  <li><a href="#correction" id="toc-correction" class="nav-link" data-scroll-target="#correction"><span class="header-section-number">3.2</span> Correction</a>
+  <ul class="collapse">
+  <li><a href="#geometric-correction" id="toc-geometric-correction" class="nav-link" data-scroll-target="#geometric-correction">Geometric Correction</a></li>
+  <li><a href="#radiometric-correction" id="toc-radiometric-correction" class="nav-link" data-scroll-target="#radiometric-correction">Radiometric Correction</a></li>
+  </ul></li>
+  <li><a href="#enchancement" id="toc-enchancement" class="nav-link" data-scroll-target="#enchancement"><span class="header-section-number">3.3</span> Enchancement</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Image Corrections</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Image Corrections and Enhancement</span></h1>
 </div>
 
 
@@ -172,8 +184,26 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="summary-type-of-corrections-and-enhancement" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="summary-type-of-corrections-and-enhancement"><span class="header-section-number">3.1</span> Summary: Type of Corrections and Enhancement</h2>
+</section>
+<section id="correction" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="correction"><span class="header-section-number">3.2</span> Correction</h2>
+<p>Remote sensing images contain bias and error from earth’s rotation, terrain and atmospheric condition that may affect the surface reflectance. Below is the summary of correction applied to remote sensing for the pre-processing process.</p>
+<section id="geometric-correction" class="level3">
+<h3 class="anchored" data-anchor-id="geometric-correction">Geometric Correction</h3>
+<p>Geometric correction is used to remove or reduce the effect of Earth rotation and terrain during the scanning of an image. The table below shows the example of geometric correction approaches. | <strong>Methods</strong> | <strong>Description</strong> | |:—————–|:——————–| |Georeferencing |The process of link an image to a map projection by using geometric transformation. Points in identical places that captured in two different images or systems is the key points in georeferencing.| |Geocoding |The process use to transform row/column structure of the image (resampling). Geocoding is required to combine different images.|</p>
+</section>
+<section id="radiometric-correction" class="level3">
+<h3 class="anchored" data-anchor-id="radiometric-correction">Radiometric Correction</h3>
+<p>The radiometric correction deals with the radiance values of reflected polychromatic solar radiation and the emitted thermal radiance from Earth’s surface. The atmosphere cause the radiance value to be altered when recorded by the satellite. In general the radiometric correction is divided into cosmetic correction and atmospheric correction. | <strong>Methods</strong> | <strong>Description</strong> | |:—————–|:——————–| |Cosmetic |Cosmetic correction use filters, image stretching, and image enhancement to correct visible errors and noise in the image data without involving atmospheric model.| |Atmospheric |Atmospheric correction is applied to remove the atmospheric effect by using models. There are two types of this correction: relative (does not require atmospheric component) and absolute (require atmospheric component).|</p>
+</section>
+</section>
+<section id="enchancement" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="enchancement"><span class="header-section-number">3.3</span> Enchancement</h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

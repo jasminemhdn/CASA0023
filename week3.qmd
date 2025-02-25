@@ -2,11 +2,11 @@
 
 ## Summary: Type of Corrections and Enhancement
 
-## Correction
+### Correction
 
 Remote sensing images contain bias and error from earth's rotation, terrain and atmospheric condition that may affect the surface reflectance. Below is the summary of correction applied to remote sensing for the pre-processing process.
 
-### Geometric Correction
+#### Geometric Correction
 
 Geometric correction is used to remove or reduce the effect of Earth rotation and terrain during the scanning of an image. The table below shows the example of geometric correction approaches.
 
@@ -17,7 +17,7 @@ Geometric correction is used to remove or reduce the effect of Earth rotation an
 
 : Geometric Correction Methods
 
-### Radiometric Correction
+#### Radiometric Correction
 
 The radiometric correction deals with the radiance values of reflected polychromatic solar radiation and the emitted thermal radiance from Earth's surface. The atmosphere cause the radiance value to be altered when recorded by the satellite. In general the radiometric correction is divided into cosmetic correction and atmospheric correction.
 
@@ -28,4 +28,4 @@ The radiometric correction deals with the radiance values of reflected polychrom
 
 : Radiometric Correction Methods
 
-## Enchancement
+### Enchancement

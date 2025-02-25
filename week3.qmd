@@ -3,21 +3,29 @@
 ## Summary: Type of Corrections and Enhancement
 
 ## Correction
+
 Remote sensing images contain bias and error from earth's rotation, terrain and atmospheric condition that may affect the surface reflectance. Below is the summary of correction applied to remote sensing for the pre-processing process.
 
 ### Geometric Correction
-Geometric correction is used to remove or reduce the effect of Earth rotation and terrain during the scanning of an image. The table below shows the example of geometric correction approaches.
-|   **Methods**    |   **Description**   |
-|:-----------------|:--------------------|
-|Georeferencing    |The process of link an image to a map projection by using geometric transformation. Points in identical places that captured in two different images or systems is the key points in georeferencing.|
-|Geocoding         |The process use to transform row/column structure of the image (resampling). Geocoding is required to combine different images.|
 
+Geometric correction is used to remove or reduce the effect of Earth rotation and terrain during the scanning of an image. The table below shows the example of geometric correction approaches.
+
+| **Methods** | **Description** |
+|----|----|
+| Georeferencing | The process of link an image to a map projection by using geometric transformation. Points in identical places that captured in two different images or systems is the key points in georeferencing. |
+| Geocoding | The process use to transform row/column structure of the image (resampling). Geocoding is required to combine different images. |
+
+: Geometric Correction Methods
 
 ### Radiometric Correction
+
 The radiometric correction deals with the radiance values of reflected polychromatic solar radiation and the emitted thermal radiance from Earth's surface. The atmosphere cause the radiance value to be altered when recorded by the satellite. In general the radiometric correction is divided into cosmetic correction and atmospheric correction.
-|   **Methods**    |   **Description**   |
-|:-----------------|:--------------------|
-|Cosmetic          |Cosmetic correction use filters, image stretching, and image enhancement to correct visible errors and noise in the image data without involving atmospheric model.|
-|Atmospheric       |Atmospheric correction is applied to remove the atmospheric effect by using models. There are two types of this correction: relative (does not require atmospheric component) and absolute (require atmospheric component).|
+
+| **Methods** | **Description** |
+|----|----|
+| Cosmetic | Cosmetic correction use filters, image stretching, and image enhancement to correct visible errors and noise in the image data without involving atmospheric model. |
+| Atmospheric | Atmospheric correction is applied to remove the atmospheric effect by using models. There are two types of this correction: relative (does not require atmospheric component) and absolute (require atmospheric component). |
+
+: Radiometric Correction Methods
 
 ## Enchancement

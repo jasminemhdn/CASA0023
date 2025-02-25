@@ -154,7 +154,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#summary-type-of-corrections-and-enhancement" id="toc-summary-type-of-corrections-and-enhancement" class="nav-link active" data-scroll-target="#summary-type-of-corrections-and-enhancement"><span class="header-section-number">3.1</span> Summary: Type of Corrections and Enhancement</a>
   <ul class="collapse">
-  <li><a href="#correction" id="toc-correction" class="nav-link" data-scroll-target="#correction">Correction</a></li>
+  <li><a href="#geometric-correction" id="toc-geometric-correction" class="nav-link" data-scroll-target="#geometric-correction">Geometric Correction</a></li>
+  <li><a href="#radiometric-correction" id="toc-radiometric-correction" class="nav-link" data-scroll-target="#radiometric-correction">Radiometric Correction</a></li>
   <li><a href="#enchancement" id="toc-enchancement" class="nav-link" data-scroll-target="#enchancement">Enchancement</a></li>
   </ul></li>
   </ul>
@@ -184,17 +185,15 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary-type-of-corrections-and-enhancement" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="summary-type-of-corrections-and-enhancement"><span class="header-section-number">3.1</span> Summary: Type of Corrections and Enhancement</h2>
-<section id="correction" class="level3">
-<h3 class="anchored" data-anchor-id="correction">Correction</h3>
 <p>Remote sensing images contain bias and error from earth’s rotation, terrain and atmospheric condition that may affect the surface reflectance. Below is the summary of correction applied to remote sensing for the pre-processing process.</p>
-<section id="geometric-correction" class="level4">
-<h4 class="anchored" data-anchor-id="geometric-correction">Geometric Correction</h4>
+<section id="geometric-correction" class="level3">
+<h3 class="anchored" data-anchor-id="geometric-correction">Geometric Correction</h3>
 <p>Geometric correction is used to remove or reduce the effect of Earth rotation and terrain during the scanning of an image. The table below shows the example of geometric correction approaches.</p>
 <table class="caption-top table">
 <caption>Geometric Correction Methods</caption>
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 32%">
+<col style="width: 67%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -214,14 +213,14 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="radiometric-correction" class="level4">
-<h4 class="anchored" data-anchor-id="radiometric-correction">Radiometric Correction</h4>
+<section id="radiometric-correction" class="level3">
+<h3 class="anchored" data-anchor-id="radiometric-correction">Radiometric Correction</h3>
 <p>The radiometric correction deals with the radiance values of reflected polychromatic solar radiation and the emitted thermal radiance from Earth’s surface. The atmosphere cause the radiance value to be altered when recorded by the satellite. In general the radiometric correction is divided into cosmetic correction and atmospheric correction.</p>
 <table class="caption-top table">
 <caption>Radiometric Correction Methods</caption>
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 31%">
+<col style="width: 68%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -241,9 +240,40 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-</section>
 <section id="enchancement" class="level3">
 <h3 class="anchored" data-anchor-id="enchancement">Enchancement</h3>
+<p>Image enhancement is the procedure of improving the quality and information content of original data (Haldar, 2018). The table below explain each of the methods.</p>
+<table class="caption-top table">
+<caption>Image Enhancement Methods</caption>
+<colgroup>
+<col style="width: 30%">
+<col style="width: 69%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Methods</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contrast Enhancemenet</td>
+<td>Contrast enhancement or stretching is performed by linear transformation expanding the original range of gray level.</td>
+</tr>
+<tr class="even">
+<td>Spatial Filtering</td>
+<td>Spatial filtering improves the naturally occurring linear features like fault, shear zones, and lineaments.</td>
+</tr>
+<tr class="odd">
+<td>Density Slicing</td>
+<td>Density slicing converts the continuous gray tone range into a series of density intervals marked by a separate color or symbol to represent different features.</td>
+</tr>
+<tr class="even">
+<td>FCC</td>
+<td>FCC is commonly used in remote sensing compared to true colors because of the absence of a pure blue color band because further scattering is dominant in the blue wavelength.</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>

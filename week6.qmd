@@ -1,7 +1,27 @@
 # Supervised vs Unsupervised Classification
 
-## Summary:
+## Summary: Difference Between Supervised and Unsupervised Classification
 
-## Application:
+Classification is the most common methods used in remote sensing. Example of basic classification is land cover classification where the pixel is classified into each category such as bare lands, built up areas, forests, agricultures, and water bodies. In general, image classification is divided into two types: Supervised and Unsupervised. Below is the explanation of each classification methods:
+
+### Supervised Classification
+
+Supervised classification makes classes based on pattern of previous information. Machine learning algorithm is categorised as supervised classification. Manual classification requires us to define each class and create area of interest (AOI) as examples for each classes, while machine learning methods use training data to make classification. Examples of supervised classification methods are Maximum Likelihood, Support Vector Machine (SVM), and Random Forest (RF).
+
+-   Maximum Likelihood: probabilistic method that assumes each class has normal distribution.
+
+-   Support Vector Machine (SVM): machine learning classifier that define the best boundary (hyperplane) to separate each class.
+
+-   Random Forest (RF): machine learning algorithm that builds multiple decision trees.
+
+### Unsupervised Classification
+
+Unsupervised classification is a method that make classification based on the same spectral properties. We don't have to define each class and know a priori information, but we have to determine the number of class or cluster that we want to create through the classification process. Example of unsupervised clustering is K-Means and ISODATA.
+
+-   K-Means: assign pixel to k clusters based on similarity of pixel value or digital number.
+
+-   ISODATA: adjust the number of clusters dynamically.
+
+## Application: Machine Learning Techniques in Animal Habitat Suitability
 
 ## Reflection:

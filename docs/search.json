@@ -154,7 +154,7 @@
     "href": "week6.html",
     "title": "6  Supervised vs Unsupervised Classification",
     "section": "",
-    "text": "6.1 Summary:",
+    "text": "6.1 Summary: Difference Between Supervised and Unsupervised Classification\nClassification is the most common methods used in remote sensing. Example of basic classification is land cover classification where the pixel is classified into each category such as bare lands, built up areas, forests, agricultures, and water bodies. In general, image classification is divided into two types: Supervised and Unsupervised. Below is the explanation of each classification methods:",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
     ]
@@ -235,6 +235,56 @@
     "title": "8  Introduction to Synthetic Aperture Radar (SAR)",
     "section": "8.3 Reflection:",
     "text": "8.3 Reflection:",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Introduction to Synthetic Aperture Radar (SAR)</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#summary",
+    "href": "week6.html#summary",
+    "title": "6  Supervised vs Unsupervised Classification",
+    "section": "",
+    "text": "Supervised Classification\n\n\nUnsupervised Classification",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#application-machine-learning-techniques-in-animal-habitat-suitability",
+    "href": "week6.html#application-machine-learning-techniques-in-animal-habitat-suitability",
+    "title": "6  Supervised vs Unsupervised Classification",
+    "section": "6.2 Application: Machine Learning Techniques in Animal Habitat Suitability",
+    "text": "6.2 Application: Machine Learning Techniques in Animal Habitat Suitability",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#summary-difference-between-supervised-and-unsupervised-classification",
+    "href": "week6.html#summary-difference-between-supervised-and-unsupervised-classification",
+    "title": "6  Supervised vs Unsupervised Classification",
+    "section": "",
+    "text": "Supervised Classification\nSupervised classification makes classes based on pattern of previous information. Machine learning algorithm is categorised as supervised classification. Manual classification requires us to define each class and create area of interest (AOI) as examples for each classes, while machine learning methods use training data to make classification. Examples of supervised classification methods are Maximum Likelihood, Support Vector Machine (SVM), and Random Forest (RF).\n\nMaximum Likelihood: probabilistic method that assumes each class has normal distribution.\nSupport Vector Machine (SVM): machine learning classifier that define the best boundary (hyperplane) to separate each class.\nRandom Forest (RF): machine learning algorithm that builds multiple decision trees.\n\n\n\nUnsupervised Classification\nUnsupervised classification is a method that make classification based on the same spectral properties. We don’t have to define each class and know a priori information, but we have to determine the number of class or cluster that we want to create through the classification process. Example of unsupervised clustering is K-Means and ISODATA.\n\nK-Means: assign pixel to k clusters based on similarity of pixel value or digital number.\nISODATA: adjust the number of clusters dynamically.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#application-building-footprints-extraction",
+    "href": "week7.html#application-building-footprints-extraction",
+    "title": "7  Pixel-based vs Object-based Classification",
+    "section": "7.2 Application: Building Footprints Extraction",
+    "text": "7.2 Application: Building Footprints Extraction",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Pixel-based vs Object-based Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#application-sar-for-disaster-mapping",
+    "href": "week8.html#application-sar-for-disaster-mapping",
+    "title": "8  Introduction to Synthetic Aperture Radar (SAR)",
+    "section": "8.2 Application: SAR for Disaster Mapping",
+    "text": "8.2 Application: SAR for Disaster Mapping",
     "crumbs": [
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Introduction to Synthetic Aperture Radar (SAR)</span>"
     ]

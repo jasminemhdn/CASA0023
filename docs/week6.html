@@ -176,8 +176,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary:</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">6.2</span> Application:</a></li>
+  <li><a href="#summary-difference-between-supervised-and-unsupervised-classification" id="toc-summary-difference-between-supervised-and-unsupervised-classification" class="nav-link active" data-scroll-target="#summary-difference-between-supervised-and-unsupervised-classification"><span class="header-section-number">6.1</span> Summary: Difference Between Supervised and Unsupervised Classification</a>
+  <ul class="collapse">
+  <li><a href="#supervised-classification" id="toc-supervised-classification" class="nav-link" data-scroll-target="#supervised-classification">Supervised Classification</a></li>
+  <li><a href="#unsupervised-classification" id="toc-unsupervised-classification" class="nav-link" data-scroll-target="#unsupervised-classification">Unsupervised Classification</a></li>
+  </ul></li>
+  <li><a href="#application-machine-learning-techniques-in-animal-habitat-suitability" id="toc-application-machine-learning-techniques-in-animal-habitat-suitability" class="nav-link" data-scroll-target="#application-machine-learning-techniques-in-animal-habitat-suitability"><span class="header-section-number">6.2</span> Application: Machine Learning Techniques in Animal Habitat Suitability</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> Reflection:</a></li>
   </ul>
 </nav>
@@ -204,11 +208,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="summary" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary:</h2>
+<section id="summary-difference-between-supervised-and-unsupervised-classification" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="summary-difference-between-supervised-and-unsupervised-classification"><span class="header-section-number">6.1</span> Summary: Difference Between Supervised and Unsupervised Classification</h2>
+<p>Classification is the most common methods used in remote sensing. Example of basic classification is land cover classification where the pixel is classified into each category such as bare lands, built up areas, forests, agricultures, and water bodies. In general, image classification is divided into two types: Supervised and Unsupervised. Below is the explanation of each classification methods:</p>
+<section id="supervised-classification" class="level3">
+<h3 class="anchored" data-anchor-id="supervised-classification">Supervised Classification</h3>
+<p>Supervised classification makes classes based on pattern of previous information. Machine learning algorithm is categorised as supervised classification. Manual classification requires us to define each class and create area of interest (AOI) as examples for each classes, while machine learning methods use training data to make classification. Examples of supervised classification methods are Maximum Likelihood, Support Vector Machine (SVM), and Random Forest (RF).</p>
+<ul>
+<li><p>Maximum Likelihood: probabilistic method that assumes each class has normal distribution.</p></li>
+<li><p>Support Vector Machine (SVM): machine learning classifier that define the best boundary (hyperplane) to separate each class.</p></li>
+<li><p>Random Forest (RF): machine learning algorithm that builds multiple decision trees.</p></li>
+</ul>
 </section>
-<section id="application" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application:</h2>
+<section id="unsupervised-classification" class="level3">
+<h3 class="anchored" data-anchor-id="unsupervised-classification">Unsupervised Classification</h3>
+<p>Unsupervised classification is a method that make classification based on the same spectral properties. We don’t have to define each class and know a priori information, but we have to determine the number of class or cluster that we want to create through the classification process. Example of unsupervised clustering is K-Means and ISODATA.</p>
+<ul>
+<li><p>K-Means: assign pixel to k clusters based on similarity of pixel value or digital number.</p></li>
+<li><p>ISODATA: adjust the number of clusters dynamically.</p></li>
+</ul>
+</section>
+</section>
+<section id="application-machine-learning-techniques-in-animal-habitat-suitability" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="application-machine-learning-techniques-in-animal-habitat-suitability"><span class="header-section-number">6.2</span> Application: Machine Learning Techniques in Animal Habitat Suitability</h2>
 </section>
 <section id="reflection" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection:</h2>

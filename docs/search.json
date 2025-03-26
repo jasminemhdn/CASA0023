@@ -60,26 +60,6 @@
     ]
   },
   {
-    "objectID": "week3.html#correction",
-    "href": "week3.html#correction",
-    "title": "3  Remote Sensing Image Corrections and Enhancement",
-    "section": "3.2 Correction",
-    "text": "3.2 Correction\nRemote sensing images contain bias and error from earth’s rotation, terrain and atmospheric condition that may affect the surface reflectance. Below is the summary of correction applied to remote sensing for the pre-processing process.\n\nGeometric Correction\nGeometric correction is used to remove or reduce the effect of Earth rotation and terrain during the scanning of an image. The table below shows the example of geometric correction approaches.\n\nGeometric Correction Methods\n\n\n\n\n\n\nMethods\nDescription\n\n\n\n\nGeoreferencing\nThe process of link an image to a map projection by using geometric transformation. Points in identical places that captured in two different images or systems is the key points in georeferencing.\n\n\nGeocoding\nThe process use to transform row/column structure of the image (resampling). Geocoding is required to combine different images.\n\n\n\n\n\nRadiometric Correction\nThe radiometric correction deals with the radiance values of reflected polychromatic solar radiation and the emitted thermal radiance from Earth’s surface. The atmosphere cause the radiance value to be altered when recorded by the satellite. In general the radiometric correction is divided into cosmetic correction and atmospheric correction.\n\nRadiometric Correction Methods\n\n\n\n\n\n\nMethods\nDescription\n\n\n\n\nCosmetic\nCosmetic correction use filters, image stretching, and image enhancement to correct visible errors and noise in the image data without involving atmospheric model.\n\n\nAtmospheric\nAtmospheric correction is applied to remove the atmospheric effect by using models. There are two types of this correction: relative (does not require atmospheric component) and absolute (require atmospheric component).",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Image Corrections and Enhancement</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#enchancement",
-    "href": "week3.html#enchancement",
-    "title": "3  Remote Sensing Image Corrections and Enhancement",
-    "section": "3.3 Enchancement",
-    "text": "3.3 Enchancement",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Image Corrections and Enhancement</span>"
-    ]
-  },
-  {
     "objectID": "week3.html#summary-type-of-corrections-and-enhancement",
     "href": "week3.html#summary-type-of-corrections-and-enhancement",
     "title": "3  Remote Sensing Image Corrections and Enhancement",
@@ -107,6 +87,156 @@
     "text": "3.3 Reflection:",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Image Corrections and Enhancement</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html",
+    "href": "week5.html",
+    "title": "5  Introduction to Google Earth Engine (GEE)",
+    "section": "",
+    "text": "5.1 Summary: GEE Function and Interface\nGoogle Earth Engine (GEE) is a cloud-based remote sensing data processing that allows us to access huge variety of open-source remote sensing product such as Landsat, Sentinel, and MODIS or raster product made by other people such as Impervious Surface. To use GEE, we must create an account first using Google account. GEE is connected directly to Google Drive, so we can save the unprocessed or already processed data into Google Drive and download it in case we want to use it for processing or lay outing the maps in GIS application such as QGIS. However, if the data too big, it would require large Google Drive space. Another alternative to store the processed data or present the maps online is by using Asset and Web Apps. This allows us to access the data we have already processed before for another analysis.\nJavaScript is the main programming language used in GEE. But, we could also use Python when GEE is connected to Google Colab, Jupyter Notebook or QGIS. Even though it seems that JavaScript is harder to understand, GEE provides explanation of every syntax in Docs Panel. The picture below shows the GEE interface.\nAnd this is the explanation of each part of the interface:\nThe picture below shows the example of MODIS Terra data catalog in GEE. In this catalog, there are information containing data availability, description of the data, raster bands and its spatial resolution, terms of use, citation, and dois. If we want to use this data, we can click IMPORT button in bottom right.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Google Earth Engine (GEE)</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#summary",
+    "href": "week5.html#summary",
+    "title": "5  Introduction to Google Earth Engine (GEE)",
+    "section": "",
+    "text": "Script Panel: this panel store the scripts that has been saved and it allows us to create and load scripts.\nDocs Panel: store the documentation and function description of GEE commands.\nAssets Panel: a storage space to upload raster or vector data in GEE.\nConsole Panel: displays outputs, print statements, and errors when running scripts.\nMap Panel: display geospatial datasets and analysis results.\nTask Manager: manages long-running tasks like exporting images, tables, or maps.\nInspector Panel: allows us to click on the map and inspect pixel values.\nGet Link: generate a shareable URL for the script and map view.\nSave: save the current script.\nRun: executes the script and applies it to the Map Panel.\nReset: clears all variables, print outputs, and layers.\nApps: provides access to custom web apps created in GEE.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Google Earth Engine (GEE)</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#application",
+    "href": "week5.html#application",
+    "title": "5  Introduction to Google Earth Engine (GEE)",
+    "section": "5.2 Application:",
+    "text": "5.2 Application:",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Google Earth Engine (GEE)</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#reflection",
+    "href": "week5.html#reflection",
+    "title": "5  Introduction to Google Earth Engine (GEE)",
+    "section": "5.3 Reflection:",
+    "text": "5.3 Reflection:",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Google Earth Engine (GEE)</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#summary-gee-function-and-interface",
+    "href": "week5.html#summary-gee-function-and-interface",
+    "title": "5  Introduction to Google Earth Engine (GEE)",
+    "section": "",
+    "text": "Script Panel: this panel store the scripts that has been saved and it allows us to create and load scripts.\nDocs Panel: store the documentation and function description of GEE commands.\nAssets Panel: a storage space to upload raster or vector data in GEE.\nConsole Panel: displays outputs, print statements, and errors when running scripts.\nMap Panel: display geospatial datasets and analysis results.\nTask Manager: manages long-running tasks like exporting images, tables, or maps.\nInspector Panel: allows us to click on the map and inspect pixel values.\nGet Link: generate a shareable URL for the script and map view.\nSave: save the current script.\nRun: executes the script and applies it to the Map Panel.\nReset: clears all variables, print outputs, and layers.\nApps: provides access to custom web apps created in GEE.\nSearch Bar: find datasets, function, or scripts.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Google Earth Engine (GEE)</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#application-identification-of-plastic-waste-accumulation-in-gee",
+    "href": "week5.html#application-identification-of-plastic-waste-accumulation-in-gee",
+    "title": "5  Introduction to Google Earth Engine (GEE)",
+    "section": "5.2 Application: Identification of Plastic Waste Accumulation in GEE",
+    "text": "5.2 Application: Identification of Plastic Waste Accumulation in GEE",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Google Earth Engine (GEE)</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html",
+    "href": "week6.html",
+    "title": "6  Supervised vs Unsupervised Classification",
+    "section": "",
+    "text": "6.1 Summary:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#application",
+    "href": "week6.html#application",
+    "title": "6  Supervised vs Unsupervised Classification",
+    "section": "6.2 Application:",
+    "text": "6.2 Application:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#reflection",
+    "href": "week6.html#reflection",
+    "title": "6  Supervised vs Unsupervised Classification",
+    "section": "6.3 Reflection:",
+    "text": "6.3 Reflection:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html",
+    "href": "week7.html",
+    "title": "7  Pixel-based vs Object-based Classification",
+    "section": "",
+    "text": "7.1 Summary:",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Pixel-based vs Object-based Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#application",
+    "href": "week7.html#application",
+    "title": "7  Pixel-based vs Object-based Classification",
+    "section": "7.2 Application:",
+    "text": "7.2 Application:",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Pixel-based vs Object-based Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#reflection",
+    "href": "week7.html#reflection",
+    "title": "7  Pixel-based vs Object-based Classification",
+    "section": "7.3 Reflection:",
+    "text": "7.3 Reflection:",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Pixel-based vs Object-based Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html",
+    "href": "week8.html",
+    "title": "8  Introduction to Synthetic Aperture Radar (SAR)",
+    "section": "",
+    "text": "8.1 Summary:",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Introduction to Synthetic Aperture Radar (SAR)</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#application",
+    "href": "week8.html#application",
+    "title": "8  Introduction to Synthetic Aperture Radar (SAR)",
+    "section": "8.2 Application:",
+    "text": "8.2 Application:",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Introduction to Synthetic Aperture Radar (SAR)</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#reflection",
+    "href": "week8.html#reflection",
+    "title": "8  Introduction to Synthetic Aperture Radar (SAR)",
+    "section": "8.3 Reflection:",
+    "text": "8.3 Reflection:",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Introduction to Synthetic Aperture Radar (SAR)</span>"
     ]
   }
 ]

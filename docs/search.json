@@ -194,7 +194,7 @@
     "href": "week7.html#application-building-footprints-extraction",
     "title": "7  Sub-pixel-based vs Object-based Classification",
     "section": "7.2 Application: Building Footprints Extraction",
-    "text": "7.2 Application: Building Footprints Extraction",
+    "text": "7.2 Application: Building Footprints Extraction\nBoth papers by Chen et al. (2020) and Li et al. (2019) focus on building extraction using high-resolution satellite imagery but apply different approaches. Chen et al. (2020) uses object-based classification by combining SLIC segmentation and a multi-modal CNN that processes both PAN and MS images from GF-2 in Wuhan, China. Meanwhile, Li et al. (2019) applies a pixel-based semantic segmentation using U-Net on pan-sharpened WorldView-3 imagery across four global cities. I find Chen et al.’s method interesting because it extracts building shapes more accurately by combining spatial and spectral features through object-based segments. The use of radiometric and atmospheric correction (FLAASH) before feature extraction is a strength, as it helps reduce spectral inconsistencies. However, the method relies heavily on segmentation quality, and its performance may drop if the objects are poorly defined. Li et al. (2019), on the other hand, takes a more scalable approach. Testing their method across diverse cities makes it more applicable globally. I like that they combine multi-source GIS data for validation and apply data augmentation and post-processing to improve results. However, there is no clear mention of atmospheric or radiometric correction, which could affect consistency, especially when using data from different cities. Their result in Khartoum was also less accurate, showing challenges in detecting buildings in low-contrast or shaded areas.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Sub-pixel-based vs Object-based Classification</span>"
     ]
@@ -327,6 +327,16 @@
     "text": "3.3 Reflection: The Overlook Importance of Image Correction\nAs I saw earlier in the application of atmospheric and radiometric correction in extracting solar radiation for assessing solar PV potential, image correction is really importance to generating real value. However, I find it these corrections are rarely talked about in the remote sensing application paper. But maybe because these days, a lot of remote sensing products have already been applied with image correction. Still, it is still importance to understand about the effect of atmosphere to the reflectance and how to use proper correction methods in the images. Beside for assessing solar PV potential, I think image correction and enhancement also important when doing study about Urban Heat Island (UHI), carbon sequestration, or mineral detection.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Image Corrections and Enhancement</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#reflection-the-complexities-of-sub-pixel-based-and-object-based-classification",
+    "href": "week7.html#reflection-the-complexities-of-sub-pixel-based-and-object-based-classification",
+    "title": "7  Sub-pixel-based vs Object-based Classification",
+    "section": "7.3 Reflection: The Complexities of Sub-pixel-based and Object-based Classification",
+    "text": "7.3 Reflection: The Complexities of Sub-pixel-based and Object-based Classification\nTruthfully, I think this topic is the most difficult one compared to other topics in this module. So far, building extraction is the only example that comes to mind when learning about object-based and sub-pixel-based classification. I find it quite tricky to distinguish between both, especially because these days, a lot of deep learning methods blur the line between pixel and object level analysis. What I realize is that object-based classification relies more on image segmentation, so the result heavily depends on how well the objects are grouped, while pixel-based methods classify every pixel without considering the spatial context, which makes it faster but also more prone to misclassification especially around boundaries. Other than for building extraction, I think methods can also be applied in various urban analyses such as detecting rooftop solar PV, greenhouses, green rooftops, or tree detection such as palm tree.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Sub-pixel-based vs Object-based Classification</span>"
     ]
   }
 ]

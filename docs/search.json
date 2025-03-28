@@ -224,7 +224,7 @@
     "href": "week8.html#summary-how-sar-works",
     "title": "8  Introduction to Synthetic Aperture Radar (SAR)",
     "section": "",
-    "text": "Band\nFrequency\nWavelength\nSatellite Examples\nApplication\n\n\n\n\nX-band\n8–12 GHz\n~3 cm\nTerraSAR-X, Cosmo-SkyMed\nUrban areas, high spatial detail\n\n\nC-band\n4–8 GHz\n~5.6 cm\nSentinel-1, RADARSAT\nAgriculture, flood mapping, rapid change\n\n\nL-band\n1–2 GHz\n~23 cm\nALOS PALSAR, SAOCOM\nVegetation, forests, subsurface features",
+    "text": "SAR Bands\n\n\n\n\n\n\n\n\n\nBand\nFrequency\nWavelength\nSatellite Examples\nApplication\n\n\n\n\nX-band\n8–12 GHz\n~3 cm\nTerraSAR-X, Cosmo-SkyMed\nUrban areas, high spatial detail\n\n\nC-band\n4–8 GHz\n~5.6 cm\nSentinel-1, RADARSAT\nAgriculture, flood mapping, rapid change\n\n\nL-band\n1–2 GHz\n~23 cm\nALOS PALSAR, SAOCOM\nVegetation, forests, subsurface features",
     "crumbs": [
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Introduction to Synthetic Aperture Radar (SAR)</span>"
     ]
@@ -307,6 +307,26 @@
     "text": "6.3 Reflection: Remote Sensing for Thematic Mapping\nAs someone who really likes thematic mapping, I am extremely happy that remote sensing classification has been evolved to variety of topic such as habitat suitability. The method is not only glued to land cover analysis. Furthermore with the growth of machine learning, we do not have to manually create class based on AOI for doing unsupervised classification which also requires us interpret the analysis visually. But, unsupervised classification also provides a challenge because it depends on the availability of training dataset and the accuracy also depends on the quality of the dataset. Nevertheless, with the growth of dataset, I believe there will be more analysis that we can conduct using machine learning and remote sensing such as plastic waste detection in water bodies and informal settlement detection which I really interested.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#application-correction-for-assessing-solar-pv-potential",
+    "href": "week3.html#application-correction-for-assessing-solar-pv-potential",
+    "title": "3  Remote Sensing Image Corrections and Enhancement",
+    "section": "3.2 Application: Correction for Assessing Solar PV Potential",
+    "text": "3.2 Application: Correction for Assessing Solar PV Potential\nThe paper by Sakti et al. (2022) model the potential of solar PV development of each building in Bandung, Indonesia by considering the energy potential and energy needed to generate electricity. The paper use shortwave radiation to calculate the solar energy potential in each building, but because sunlight that reach the building is not fully optimum, several correction methods should be applied by using Aerosol Optical Depth (AOD), precipitation, and Land Surface Temperature (LST). I think this paper is very interesting to support the government goals in transitioning to renewable energy. It provides a depth analysis on the solar energy potential and the electricity that needs to be generated. In the analysis on the solar energy potential, the author provides hillshade analysis and atmospheric correction that might alter the sunlight in reaching the rooftop. However, the author assumes constant value of daily data and does not consider cloud and humidity in the atmospheric correction which I think is important because beside needing optimum sunlight, we also have to make sure that the sun is shining almost all year round for it to be effective. Another paper that I found regarding this topic is by Lodhi et al. (2024) that assess the solar PV potential using Mask R-CNN and DeepLabV3 deep learning models on high resolution Google Earth Imagery and generating DEM from 10 meter resolution Sentinel-1 for estimating solar radiation. Both papers have same goals with very different approaches, but still applies image correction before extracting the value of solar raditation. Lodhi et al. (2024) uses noise removal, radio metric calibration, and terrain correction to Sentinel-1. I think for assessing solar PV potential, radiometric correction especially atmospheric correction is very important as it is connected directly to sun radiation.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Image Corrections and Enhancement</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#reflection-the-overlook-importance-of-image-correction",
+    "href": "week3.html#reflection-the-overlook-importance-of-image-correction",
+    "title": "3  Remote Sensing Image Corrections and Enhancement",
+    "section": "3.3 Reflection: The Overlook Importance of Image Correction",
+    "text": "3.3 Reflection: The Overlook Importance of Image Correction\nAs I saw earlier in the application of atmospheric and radiometric correction in extracting solar radiation for assessing solar PV potential, image correction is really importance to generating real value. However, I find it these corrections are rarely talked about in the remote sensing application paper. But maybe because these days, a lot of remote sensing products have already been applied with image correction. Still, it is still importance to understand about the effect of atmosphere to the reflectance and how to use proper correction methods in the images. Beside for assessing solar PV potential, I think image correction and enhancement also important when doing study about Urban Heat Island (UHI), carbon sequestration, or mineral detection.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Image Corrections and Enhancement</span>"
     ]
   }
 ]

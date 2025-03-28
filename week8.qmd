@@ -5,7 +5,7 @@
 Synthetic Aperture Radar is an active remote sensing sensor that can generate it's own energy, can penetrate through the clouds and operates day and night. SAR is using microwave frequencies to capture image of Earth's surface. SAR works by emitting radar pulses toward Earth's surface, then the pulses interact with surfaces, scattering signals differently based on material properties, the sensors then detect and process returned signals to create images based on intensity, phase, and polarization. The table below shows the common SAR frequency bands
 
 | Band | Frequency | Wavelength | Satellite Examples | Application |
-|---------------|---------------|---------------|---------------|---------------|
+|----|----|----|----|----|
 | X-band | 8–12 GHz | \~3 cm | TerraSAR-X, Cosmo-SkyMed | Urban areas, high spatial detail |
 | C-band | 4–8 GHz | \~5.6 cm | Sentinel-1, RADARSAT | Agriculture, flood mapping, rapid change |
 | L-band | 1–2 GHz | \~23 cm | ALOS PALSAR, SAOCOM | Vegetation, forests, subsurface features |

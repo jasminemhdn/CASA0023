@@ -1,14 +1,38 @@
 # Sub-pixel-based vs Object-based Classification
 
-## Summary:
+## Summary: More Type of Classification and Accuracy Assessment
 
 Beside categorised based on the use of training data and a priori knowledge, remote sensing classification can be divided into sub-pixel-based and object-based classification.
 
 ### Sub-pixel-based Classification
 
+Sub-pixel classification recognizes that each pixel can contain multiple land-cover types. This method estimates the fractional composition of each pixel based on spectral properties. It’s especially useful when working with coarse-resolution imagery. Sub-pixel classification highly accurate for representing fractional information within mixed pixels. Particularly suitable for coarse resolution imagery where pixels represent multiple land covers. The accuracy significantly depends on correct endmember identification; incorrect or missing endmembers can cause misclassification and decrease overall accuracy.
+
+Examples of sub-pixel classification methods include:
+
+-   Linear Spectral Unmixing (LSU): Uses pure endmembers to estimate fractional abundances within each pixel.
+
+-   Multiple Endmember Spectral Mixture Analysis (MESMA): Allows different combinations of endmembers to model pixel composition dynamically.
+
 ### Object-based Classification
 
+Object-based classification groups pixels into meaningful objects or segments based on spatial, spectral, and textural properties before classification. Unlike traditional methods, object-based approaches classify objects rather than individual pixels, making use of spatial context. OBIA typically achieves higher classification accuracy compared to traditional pixel-based methods because it incorporates contextual information (shape, texture, spatial arrangement), reducing noise and improving class boundaries. However, accuracy strongly relies on segmentation quality; poor segmentation can lead to misclassification and reduce overall accuracy.
+
+Examples of object-based classification workflows typically involve two main stages:
+
+-   Segmentation: Pixels grouped into homogeneous objects based on spatial, spectral, and textural similarity.
+
+-   Classification: Objects classified into land cover categories using algorithms such as Random Forest, Support Vector Machine (SVM), or Decision Trees.
+
 ### Classification Accuracy Assessment
+
+Accuracy assessment is a process that should never be skipped when doing image classification. This process generally involves comparison between classified results and reference (ground-truth) data. The three most common types of accuracy measures are:
+
+-   Producer's Accuracy: this measures how well a class in the reference data is correctly classified. It indicates omission error, reflecting cases where a pixel of a certain class was mistakenly omitted (missed).
+
+-   User's Accuracy: this measures the reliability from the user's perspective, indicating commission errors. Commission errors happen when pixels are incorrectly classified into a category they do not belong to.
+
+-   Overall Accuracy: measures the overall performance by comparing the total number of correctly classified pixels with the total number of reference pixels.
 
 ## Application: Building Footprints Extraction
 

@@ -176,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary:</a>
+  <li><a href="#summary-more-type-of-classification-and-accuracy-assessment" id="toc-summary-more-type-of-classification-and-accuracy-assessment" class="nav-link active" data-scroll-target="#summary-more-type-of-classification-and-accuracy-assessment"><span class="header-section-number">7.1</span> Summary: More Type of Classification and Accuracy Assessment</a>
   <ul class="collapse">
   <li><a href="#sub-pixel-based-classification" id="toc-sub-pixel-based-classification" class="nav-link" data-scroll-target="#sub-pixel-based-classification">Sub-pixel-based Classification</a></li>
   <li><a href="#object-based-classification" id="toc-object-based-classification" class="nav-link" data-scroll-target="#object-based-classification">Object-based Classification</a></li>
@@ -209,17 +209,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="summary" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary:</h2>
+<section id="summary-more-type-of-classification-and-accuracy-assessment" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="summary-more-type-of-classification-and-accuracy-assessment"><span class="header-section-number">7.1</span> Summary: More Type of Classification and Accuracy Assessment</h2>
 <p>Beside categorised based on the use of training data and a priori knowledge, remote sensing classification can be divided into sub-pixel-based and object-based classification.</p>
 <section id="sub-pixel-based-classification" class="level3">
 <h3 class="anchored" data-anchor-id="sub-pixel-based-classification">Sub-pixel-based Classification</h3>
+<p>Sub-pixel classification recognizes that each pixel can contain multiple land-cover types. This method estimates the fractional composition of each pixel based on spectral properties. It’s especially useful when working with coarse-resolution imagery. Sub-pixel classification highly accurate for representing fractional information within mixed pixels. Particularly suitable for coarse resolution imagery where pixels represent multiple land covers. The accuracy significantly depends on correct endmember identification; incorrect or missing endmembers can cause misclassification and decrease overall accuracy.</p>
+<p>Examples of sub-pixel classification methods include:</p>
+<ul>
+<li><p>Linear Spectral Unmixing (LSU): Uses pure endmembers to estimate fractional abundances within each pixel.</p></li>
+<li><p>Multiple Endmember Spectral Mixture Analysis (MESMA): Allows different combinations of endmembers to model pixel composition dynamically.</p></li>
+</ul>
 </section>
 <section id="object-based-classification" class="level3">
 <h3 class="anchored" data-anchor-id="object-based-classification">Object-based Classification</h3>
+<p>Object-based classification groups pixels into meaningful objects or segments based on spatial, spectral, and textural properties before classification. Unlike traditional methods, object-based approaches classify objects rather than individual pixels, making use of spatial context. OBIA typically achieves higher classification accuracy compared to traditional pixel-based methods because it incorporates contextual information (shape, texture, spatial arrangement), reducing noise and improving class boundaries. However, accuracy strongly relies on segmentation quality; poor segmentation can lead to misclassification and reduce overall accuracy.</p>
+<p>Examples of object-based classification workflows typically involve two main stages:</p>
+<ul>
+<li><p>Segmentation: Pixels grouped into homogeneous objects based on spatial, spectral, and textural similarity.</p></li>
+<li><p>Classification: Objects classified into land cover categories using algorithms such as Random Forest, Support Vector Machine (SVM), or Decision Trees.</p></li>
+</ul>
 </section>
 <section id="classification-accuracy-assessment" class="level3">
 <h3 class="anchored" data-anchor-id="classification-accuracy-assessment">Classification Accuracy Assessment</h3>
+<p>Accuracy assessment is a process that should never be skipped when doing image classification. This process generally involves comparison between classified results and reference (ground-truth) data. The three most common types of accuracy measures are:</p>
+<ul>
+<li><p>Producer’s Accuracy: this measures how well a class in the reference data is correctly classified. It indicates omission error, reflecting cases where a pixel of a certain class was mistakenly omitted (missed).</p></li>
+<li><p>User’s Accuracy: this measures the reliability from the user’s perspective, indicating commission errors. Commission errors happen when pixels are incorrectly classified into a category they do not belong to.</p></li>
+<li><p>Overall Accuracy: measures the overall performance by comparing the total number of correctly classified pixels with the total number of reference pixels.</p></li>
+</ul>
 </section>
 </section>
 <section id="application-building-footprints-extraction" class="level2" data-number="7.2">

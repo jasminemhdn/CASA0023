@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>7&nbsp; Pixel-based vs Object-based Classification – Learning Diary - CASA0023: Remotely Sensing Cities and Environment</title>
+<title>7&nbsp; Sub-pixel-based vs Object-based Classification – Learning Diary - CASA0023: Remotely Sensing Cities and Environment</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Pixel-based vs Object-based Classification</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sub-pixel-based vs Object-based Classification</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -151,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week7.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Pixel-based vs Object-based Classification</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sub-pixel-based vs Object-based Classification</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -176,7 +176,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary:</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary:</a>
+  <ul class="collapse">
+  <li><a href="#sub-pixel-based-classification" id="toc-sub-pixel-based-classification" class="nav-link" data-scroll-target="#sub-pixel-based-classification">Sub-pixel-based Classification</a></li>
+  <li><a href="#object-based-classification" id="toc-object-based-classification" class="nav-link" data-scroll-target="#object-based-classification">Object-based Classification</a></li>
+  <li><a href="#classification-accuracy-assessment" id="toc-classification-accuracy-assessment" class="nav-link" data-scroll-target="#classification-accuracy-assessment">Classification Accuracy Assessment</a></li>
+  </ul></li>
   <li><a href="#application-building-footprints-extraction" id="toc-application-building-footprints-extraction" class="nav-link" data-scroll-target="#application-building-footprints-extraction"><span class="header-section-number">7.2</span> Application: Building Footprints Extraction</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> Reflection:</a></li>
   </ul>
@@ -187,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Pixel-based vs Object-based Classification</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sub-pixel-based vs Object-based Classification</span></h1>
 </div>
 
 
@@ -206,6 +211,16 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary:</h2>
+<p>Beside categorised based on the use of training data and a priori knowledge, remote sensing classification can be divided into sub-pixel-based and object-based classification.</p>
+<section id="sub-pixel-based-classification" class="level3">
+<h3 class="anchored" data-anchor-id="sub-pixel-based-classification">Sub-pixel-based Classification</h3>
+</section>
+<section id="object-based-classification" class="level3">
+<h3 class="anchored" data-anchor-id="object-based-classification">Object-based Classification</h3>
+</section>
+<section id="classification-accuracy-assessment" class="level3">
+<h3 class="anchored" data-anchor-id="classification-accuracy-assessment">Classification Accuracy Assessment</h3>
+</section>
 </section>
 <section id="application-building-footprints-extraction" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="application-building-footprints-extraction"><span class="header-section-number">7.2</span> Application: Building Footprints Extraction</h2>

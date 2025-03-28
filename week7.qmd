@@ -1,6 +1,14 @@
-# Pixel-based vs Object-based Classification
+# Sub-pixel-based vs Object-based Classification
 
 ## Summary:
+
+Beside categorised based on the use of training data and a priori knowledge, remote sensing classification can be divided into sub-pixel-based and object-based classification.
+
+### Sub-pixel-based Classification
+
+### Object-based Classification
+
+### Classification Accuracy Assessment
 
 ## Application: Building Footprints Extraction
 

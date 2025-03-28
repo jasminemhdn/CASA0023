@@ -274,9 +274,39 @@
     "href": "week5.html#reflection-gee-which-provide-powerful-tools-and-reproducible-analysis",
     "title": "5  Introduction to Google Earth Engine (GEE)",
     "section": "5.3 Reflection: GEE which Provide Powerful Tools and Reproducible Analysis",
-    "text": "5.3 Reflection: GEE which Provide Powerful Tools and Reproducible Analysis\nI think GEE is the answer to limitation in computer resources when doing raster analysis. Because GEE is a cloud-based processing, we do not have to worry about the computer storage or drive storage space as we can save the result in assets. Furthermore, because of the cloud-based processing, we do not have to rely on high specification computer which helps me a lot in doing analysis. Although, good internet access is a requirement for GEE. Moreover, the massive already preprocessed dataset that available in GEE allows us to make more innovative analysis on uncommon topic. It will also saving more time because we could just use the product rather than raw raster that need to go through correction. Although, we still have to aware of the impact of the product resolution and accuracy to our analysis. Beside using raster product directly, we can also applied the algorithm made by other users to our analysis and even made changes if needed. The reproducible part of GEE makes development of research on remote sensing application even more rapid. The tools provided in GEE is also awesome and powerful where we can apply different machine learning algorithm for our analysis and display the result through interactive web map directly.",
+    "text": "5.3 Reflection: GEE which Provide Powerful Tools and Reproducible Analysis\nI think GEE is the answer to limitation in computer resources when doing raster analysis. Because GEE is a cloud-based processing, we do not have to worry about the computer storage or drive storage space as we can save the result in assets. Furthermore, because of the cloud-based processing, we do not have to rely on high specification computer which helps me a lot in doing analysis. Although, good internet access is a requirement for GEE. Moreover, the massive already preprocessed dataset that available in GEE allows us to make more innovative analysis on uncommon topic. It will also saving more time because we could just use the product rather than raw raster that need to go through correction. Although, we still have to aware of the impact of the product resolution and accuracy to our analysis. Beside using raster product directly, we can also applied the algorithm made by other users to our analysis and even made changes if needed. The reproducible part of GEE makes development of research on remote sensing application even more rapid. The tools provided in GEE is also awesome and powerful where we can apply different machine learning algorithm for our analysis and display the result through interactive web map directly. Another thing that I like from GEE is that the result of data processing is automatically upsampling the pixel unlike GIS software like QGIS and ArcGIS that in default use downsampling. It makes the result automatically matched with the finest spatial resolution data that are used.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Google Earth Engine (GEE)</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#application-image-enhancement-and-atmospheric-correction-for-assessing-solar-pv-potential",
+    "href": "week3.html#application-image-enhancement-and-atmospheric-correction-for-assessing-solar-pv-potential",
+    "title": "3  Remote Sensing Image Corrections and Enhancement",
+    "section": "3.2 Application: Image Enhancement and Atmospheric Correction for Assessing Solar PV Potential",
+    "text": "3.2 Application: Image Enhancement and Atmospheric Correction for Assessing Solar PV Potential",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Image Corrections and Enhancement</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#application-machine-learning-techniques-in-habitat-suitability",
+    "href": "week6.html#application-machine-learning-techniques-in-habitat-suitability",
+    "title": "6  Supervised vs Unsupervised Classification",
+    "section": "6.2 Application: Machine Learning Techniques in Habitat Suitability",
+    "text": "6.2 Application: Machine Learning Techniques in Habitat Suitability\nPaper by Santoso et al. (2023) assess the suitability of the developed Grizzled leaf monkey habitat in Java Island, Indonesia using combination of Random Forest (RF), Support Vector Machine (SVM), and Maximum Entropy (MaxEnt). A total of 12 remote sensing product were used in this studies including MODIS LST, MODIS LC, CHIRPS, FLDAS, SRTM, HydroSHEDS, Landsat 8, VIIRS, Sentinel-5P and Worldpop. It is really impresive to me that nowadays image classification and machine learning methods are not only applied to land cover mapping, but for a variety use including habitat suitability. This paper give a comprehensive analysis by using massive dataset that assess the climate, topography, ecology, and anthropogenic factors to habitat suitability. They also integrating three different machine learning algorithms which I think can be good for eliminating limitation of each of the methods. However, I think it can be great if they use more technique in this integration rather than using unweighted one. I also like the layouting of the maps which is very creative and inspiring especially for Surili Habitat Against Population Prediction 2040. Things that I am curious about the method is thy why they use different vegetation index like NDVI, SAVI, and leaf area index because it potentially creating multicollinearity and affecting the result. I think it will be better if they can use the same procedure as Rahimian Boogar et al. (2019) in which they do proper data preprocessing and processing to predict habitat suitability of Juniperus spp. In the Southern Zagros Mountains of Iran by utilising SVM and MaxEnt. Both papers actually use massive dataset, but there are difference in parameters that they used in which Rahimian Boogar et al. (2019) divided the parameters into climate, topography, soil, and environmental factors. It will be interesting if Rahimian Boogar et al. (2019) also include anthropogenic factors in their study. Overall, I think what has been missing from both papers is that they only include AUC and ROC as accuracy assessment, it will be good if they include more accuracy assessment for more thorough analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#reflection-remote-sensing-for-thematic-mapping",
+    "href": "week6.html#reflection-remote-sensing-for-thematic-mapping",
+    "title": "6  Supervised vs Unsupervised Classification",
+    "section": "6.3 Reflection: Remote Sensing for Thematic Mapping",
+    "text": "6.3 Reflection: Remote Sensing for Thematic Mapping\nAs someone who really likes thematic mapping, I am extremely happy that remote sensing classification has been evolved to variety of topic such as habitat suitability. The method is not only glued to land cover analysis. Furthermore with the growth of machine learning, we do not have to manually create class based on AOI for doing unsupervised classification which also requires us interpret the analysis visually. But, unsupervised classification also provides a challenge because it depends on the availability of training dataset and the accuracy also depends on the quality of the dataset. Nevertheless, with the growth of dataset, I believe there will be more analysis that we can conduct using machine learning and remote sensing such as plastic waste detection in water bodies and informal settlement detection which I really interested.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
     ]
   }
 ]

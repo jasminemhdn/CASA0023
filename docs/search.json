@@ -258,5 +258,25 @@
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Sub-pixel-based vs Object-based Classification</span>"
     ]
+  },
+  {
+    "objectID": "week5.html#application-global-artificial-impervious-area-gaia",
+    "href": "week5.html#application-global-artificial-impervious-area-gaia",
+    "title": "5  Introduction to Google Earth Engine (GEE)",
+    "section": "5.2 Application: Global Artificial Impervious Area (GAIA)",
+    "text": "5.2 Application: Global Artificial Impervious Area (GAIA)\nGong, Li and Zhang (2019) map impervious surface in China from 1978 - 2017 using NDVI, MNDWI, and SWIR value of Landsat data that differentiate urban areas with other type of land cover. They also use Night Time Light from VIIRS for masking to reduce potential confusion between impervious cover and bare land, particularly in arid and semi-arid areas. By utilising exclusion/inclusion algorithm in GEE, they produce a map with 93% accuracy and 87% similarities with previous studies. I like this research because they use open remote sensing data and develop the algorithm through GEE which makes it reproducible for analysis in other areas and the result can be very useful for analysing urban expansion or differentiate the year the an area being built. Something that feels missing from this paper is that I do not find how the author dealing with different spatial resolution of Landsat 1, 2, 3 (60 meters) and Landsat 4, 5, 7, 8 (30 meters) and how it affect the performance of the analysis especially when they said that earlier data have higher accuracy and at the same time there is a limited good quality in earlier data which produce more uncertainty. Furthermore, the analysis performance does not doing well in arid or semi-arid, cold, and highly mountainous region implying nighttime light is not strong enough to help preserve settlements in those areas. But then, in 2020, the author published another similar paper with upgraded upgrade the analysis of impervious surface to global coverage and fully use 30 meter spatial resolution landsat images from 1985 – 2018 with Sentinel-1 complemented nighttime light data as ancillary datasets. In this upgrade, the backscatter coefficient of Sentinel-1 is used to generate a primary urban mask using a thresholding method for impervious surface mapping in arid region. The dataset that produce 89% of accuracy is being shared in GEE and can be used widely by users. I really like this dataset and use it a lot for my analysis. But, I also have some concern regarding how the low spatial resolution of Night Time Light can be used for delineating urban areas and how it might affect the overall spatial resolution of the result. Furthermore, I think it will be challenging to use the same method in current period where people start to design building using green roof because the methods rely on NDVI so it might be hard to differentiate building with vegetation areas.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Google Earth Engine (GEE)</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#reflection-gee-which-provide-powerful-tools-and-reproducible-analysis",
+    "href": "week5.html#reflection-gee-which-provide-powerful-tools-and-reproducible-analysis",
+    "title": "5  Introduction to Google Earth Engine (GEE)",
+    "section": "5.3 Reflection: GEE which Provide Powerful Tools and Reproducible Analysis",
+    "text": "5.3 Reflection: GEE which Provide Powerful Tools and Reproducible Analysis\nI think GEE is the answer to limitation in computer resources when doing raster analysis. Because GEE is a cloud-based processing, we do not have to worry about the computer storage or drive storage space as we can save the result in assets. Furthermore, because of the cloud-based processing, we do not have to rely on high specification computer which helps me a lot in doing analysis. Although, good internet access is a requirement for GEE. Moreover, the massive already preprocessed dataset that available in GEE allows us to make more innovative analysis on uncommon topic. It will also saving more time because we could just use the product rather than raw raster that need to go through correction. Although, we still have to aware of the impact of the product resolution and accuracy to our analysis. Beside using raster product directly, we can also applied the algorithm made by other users to our analysis and even made changes if needed. The reproducible part of GEE makes development of research on remote sensing application even more rapid. The tools provided in GEE is also awesome and powerful where we can apply different machine learning algorithm for our analysis and display the result through interactive web map directly.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Google Earth Engine (GEE)</span>"
+    ]
   }
 ]

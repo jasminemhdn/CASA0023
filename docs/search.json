@@ -100,36 +100,6 @@
     ]
   },
   {
-    "objectID": "week5.html#summary",
-    "href": "week5.html#summary",
-    "title": "5  Introduction to Google Earth Engine (GEE)",
-    "section": "",
-    "text": "Script Panel: this panel store the scripts that has been saved and it allows us to create and load scripts.\nDocs Panel: store the documentation and function description of GEE commands.\nAssets Panel: a storage space to upload raster or vector data in GEE.\nConsole Panel: displays outputs, print statements, and errors when running scripts.\nMap Panel: display geospatial datasets and analysis results.\nTask Manager: manages long-running tasks like exporting images, tables, or maps.\nInspector Panel: allows us to click on the map and inspect pixel values.\nGet Link: generate a shareable URL for the script and map view.\nSave: save the current script.\nRun: executes the script and applies it to the Map Panel.\nReset: clears all variables, print outputs, and layers.\nApps: provides access to custom web apps created in GEE.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Google Earth Engine (GEE)</span>"
-    ]
-  },
-  {
-    "objectID": "week5.html#application",
-    "href": "week5.html#application",
-    "title": "5  Introduction to Google Earth Engine (GEE)",
-    "section": "5.2 Application:",
-    "text": "5.2 Application:",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Google Earth Engine (GEE)</span>"
-    ]
-  },
-  {
-    "objectID": "week5.html#reflection",
-    "href": "week5.html#reflection",
-    "title": "5  Introduction to Google Earth Engine (GEE)",
-    "section": "5.3 Reflection:",
-    "text": "5.3 Reflection:",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Google Earth Engine (GEE)</span>"
-    ]
-  },
-  {
     "objectID": "week5.html#summary-gee-function-and-interface",
     "href": "week5.html#summary-gee-function-and-interface",
     "title": "5  Introduction to Google Earth Engine (GEE)",
@@ -150,6 +120,16 @@
     ]
   },
   {
+    "objectID": "week5.html#reflection",
+    "href": "week5.html#reflection",
+    "title": "5  Introduction to Google Earth Engine (GEE)",
+    "section": "5.3 Reflection:",
+    "text": "5.3 Reflection:",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Google Earth Engine (GEE)</span>"
+    ]
+  },
+  {
     "objectID": "week6.html",
     "href": "week6.html",
     "title": "6  Supervised vs Unsupervised Classification",
@@ -160,11 +140,21 @@
     ]
   },
   {
-    "objectID": "week6.html#application",
-    "href": "week6.html#application",
+    "objectID": "week6.html#summary-difference-between-supervised-and-unsupervised-classification",
+    "href": "week6.html#summary-difference-between-supervised-and-unsupervised-classification",
     "title": "6  Supervised vs Unsupervised Classification",
-    "section": "6.2 Application:",
-    "text": "6.2 Application:",
+    "section": "",
+    "text": "Supervised Classification\nSupervised classification makes classes based on pattern of previous information. Machine learning algorithm is categorised as supervised classification. Manual classification requires us to define each class and create area of interest (AOI) as examples for each classes, while machine learning methods use training data to make classification. Examples of supervised classification methods are Maximum Likelihood, Support Vector Machine (SVM), and Random Forest (RF).\n\nMaximum Likelihood: probabilistic method that assumes each class has normal distribution.\nSupport Vector Machine (SVM): machine learning classifier that define the best boundary (hyperplane) to separate each class.\nRandom Forest (RF): machine learning algorithm that builds multiple decision trees.\n\n\n\nUnsupervised Classification\nUnsupervised classification is a method that make classification based on the same spectral properties. We don’t have to define each class and know a priori information, but we have to determine the number of class or cluster that we want to create through the classification process. Example of unsupervised clustering is K-Means and ISODATA.\n\nK-Means: assign pixel to k clusters based on similarity of pixel value or digital number.\nISODATA: adjust the number of clusters dynamically.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#application-machine-learning-techniques-in-animal-habitat-suitability",
+    "href": "week6.html#application-machine-learning-techniques-in-animal-habitat-suitability",
+    "title": "6  Supervised vs Unsupervised Classification",
+    "section": "6.2 Application: Machine Learning Techniques in Animal Habitat Suitability",
+    "text": "6.2 Application: Machine Learning Techniques in Animal Habitat Suitability",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
     ]
@@ -190,13 +180,23 @@
     ]
   },
   {
-    "objectID": "week7.html#application",
-    "href": "week7.html#application",
-    "title": "7  Pixel-based vs Object-based Classification",
-    "section": "7.2 Application:",
-    "text": "7.2 Application:",
+    "objectID": "week7.html#summary",
+    "href": "week7.html#summary",
+    "title": "7  Sub-pixel-based vs Object-based Classification",
+    "section": "",
+    "text": "Sub-pixel-based Classification\n\n\nObject-based Classification\n\n\nClassification Accuracy Assessment",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Pixel-based vs Object-based Classification</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Sub-pixel-based vs Object-based Classification</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#application-building-footprints-extraction",
+    "href": "week7.html#application-building-footprints-extraction",
+    "title": "7  Sub-pixel-based vs Object-based Classification",
+    "section": "7.2 Application: Building Footprints Extraction",
+    "text": "7.2 Application: Building Footprints Extraction",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Sub-pixel-based vs Object-based Classification</span>"
     ]
   },
   {
@@ -214,77 +214,17 @@
     "href": "week8.html",
     "title": "8  Introduction to Synthetic Aperture Radar (SAR)",
     "section": "",
-    "text": "8.1 Summary:\nSynthetic Aperture Radar is an active remote sensing sensor that can generate it’s own energy and can penetrate through the clouds.",
+    "text": "8.1 Summary: How SAR Works\nSynthetic Aperture Radar is an active remote sensing sensor that can generate it’s own energy, can penetrate through the clouds and operates day and night. SAR is using microwave frequencies to capture image of Earth’s surface. SAR works by emitting radar pulses toward Earth’s surface, then the pulses interact with surfaces, scattering signals differently based on material properties, the sensors then detect and process returned signals to create images based on intensity, phase, and polarization. The table below shows the common SAR frequency bands",
     "crumbs": [
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Introduction to Synthetic Aperture Radar (SAR)</span>"
     ]
   },
   {
-    "objectID": "week8.html#application",
-    "href": "week8.html#application",
+    "objectID": "week8.html#summary-how-sar-works",
+    "href": "week8.html#summary-how-sar-works",
     "title": "8  Introduction to Synthetic Aperture Radar (SAR)",
-    "section": "8.2 Application:",
-    "text": "8.2 Application:",
-    "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Introduction to Synthetic Aperture Radar (SAR)</span>"
-    ]
-  },
-  {
-    "objectID": "week8.html#reflection",
-    "href": "week8.html#reflection",
-    "title": "8  Introduction to Synthetic Aperture Radar (SAR)",
-    "section": "8.3 Reflection:",
-    "text": "8.3 Reflection:",
-    "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Introduction to Synthetic Aperture Radar (SAR)</span>"
-    ]
-  },
-  {
-    "objectID": "week6.html#summary",
-    "href": "week6.html#summary",
-    "title": "6  Supervised vs Unsupervised Classification",
     "section": "",
-    "text": "Supervised Classification\n\n\nUnsupervised Classification",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
-    ]
-  },
-  {
-    "objectID": "week6.html#application-machine-learning-techniques-in-animal-habitat-suitability",
-    "href": "week6.html#application-machine-learning-techniques-in-animal-habitat-suitability",
-    "title": "6  Supervised vs Unsupervised Classification",
-    "section": "6.2 Application: Machine Learning Techniques in Animal Habitat Suitability",
-    "text": "6.2 Application: Machine Learning Techniques in Animal Habitat Suitability",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
-    ]
-  },
-  {
-    "objectID": "week6.html#summary-difference-between-supervised-and-unsupervised-classification",
-    "href": "week6.html#summary-difference-between-supervised-and-unsupervised-classification",
-    "title": "6  Supervised vs Unsupervised Classification",
-    "section": "",
-    "text": "Supervised Classification\nSupervised classification makes classes based on pattern of previous information. Machine learning algorithm is categorised as supervised classification. Manual classification requires us to define each class and create area of interest (AOI) as examples for each classes, while machine learning methods use training data to make classification. Examples of supervised classification methods are Maximum Likelihood, Support Vector Machine (SVM), and Random Forest (RF).\n\nMaximum Likelihood: probabilistic method that assumes each class has normal distribution.\nSupport Vector Machine (SVM): machine learning classifier that define the best boundary (hyperplane) to separate each class.\nRandom Forest (RF): machine learning algorithm that builds multiple decision trees.\n\n\n\nUnsupervised Classification\nUnsupervised classification is a method that make classification based on the same spectral properties. We don’t have to define each class and know a priori information, but we have to determine the number of class or cluster that we want to create through the classification process. Example of unsupervised clustering is K-Means and ISODATA.\n\nK-Means: assign pixel to k clusters based on similarity of pixel value or digital number.\nISODATA: adjust the number of clusters dynamically.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Supervised vs Unsupervised Classification</span>"
-    ]
-  },
-  {
-    "objectID": "week7.html#application-building-footprints-extraction",
-    "href": "week7.html#application-building-footprints-extraction",
-    "title": "7  Sub-pixel-based vs Object-based Classification",
-    "section": "7.2 Application: Building Footprints Extraction",
-    "text": "7.2 Application: Building Footprints Extraction",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Sub-pixel-based vs Object-based Classification</span>"
-    ]
-  },
-  {
-    "objectID": "week8.html#application-sar-for-disaster-mapping",
-    "href": "week8.html#application-sar-for-disaster-mapping",
-    "title": "8  Introduction to Synthetic Aperture Radar (SAR)",
-    "section": "8.2 Application: SAR for Disaster Mapping",
-    "text": "8.2 Application: SAR for Disaster Mapping",
+    "text": "Band\nFrequency\nWavelength\nSatellite Examples\nApplication\n\n\n\n\nX-band\n8–12 GHz\n~3 cm\nTerraSAR-X, Cosmo-SkyMed\nUrban areas, high spatial detail\n\n\nC-band\n4–8 GHz\n~5.6 cm\nSentinel-1, RADARSAT\nAgriculture, flood mapping, rapid change\n\n\nL-band\n1–2 GHz\n~23 cm\nALOS PALSAR, SAOCOM\nVegetation, forests, subsurface features",
     "crumbs": [
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Introduction to Synthetic Aperture Radar (SAR)</span>"
     ]
@@ -307,16 +247,6 @@
     "text": "8.3 Reflection: Upcoming NASA-ISRO NISAR\nI think SAR is really interesting approaches to do time series mapping because it does not affected by weather and not rely on sun energy. It also can mapping remote areas in disaster mapping, so we can do almost real-time monitoring that does not requires lot of resources and allocation. However, understanding SAR and it’s data processing are extremely difficult and for now we can only use Sentinel-1 that is open dataset while we know that Sentinel-1 C-band is highly sensitive in vegetated areas and ALOS PALSAR 2 is limited to commercial. I tried to find other open SAR dataset that use L-band and find out NASA-ISRO NISAR that using L-band and S-band is expected to launch this year. I thin it will be massively used if the satellite has been launched later because the S-band provide the moderate performance between C-band and L-band so it can be more balanced and I am really excited on how these SAR dataset can be used for other mapping such as mapping ancient settlements, detection of buried archaeological structures, assessing building structure and stability, and carbon stock estimation. In January 2025, NASA-ISRO NISAR had finished all preliminary checkout and is expected to be launched in March 2025.",
     "crumbs": [
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Introduction to Synthetic Aperture Radar (SAR)</span>"
-    ]
-  },
-  {
-    "objectID": "week7.html#summary",
-    "href": "week7.html#summary",
-    "title": "7  Sub-pixel-based vs Object-based Classification",
-    "section": "",
-    "text": "Sub-pixel-based Classification\n\n\nObject-based Classification\n\n\nClassification Accuracy Assessment",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Sub-pixel-based vs Object-based Classification</span>"
     ]
   }
 ]

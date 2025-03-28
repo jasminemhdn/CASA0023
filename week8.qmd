@@ -1,6 +1,6 @@
 # Introduction to Synthetic Aperture Radar (SAR)
 
-## Summary:
+## Summary: How SAR Works
 
 Synthetic Aperture Radar is an active remote sensing sensor that can generate it's own energy, can penetrate through the clouds and operates day and night. SAR is using microwave frequencies to capture image of Earth's surface. SAR works by emitting radar pulses toward Earth's surface, then the pulses interact with surfaces, scattering signals differently based on material properties, the sensors then detect and process returned signals to create images based on intensity, phase, and polarization. The table below shows the common SAR frequency bands
 

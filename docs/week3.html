@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -268,7 +288,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="enchancement" class="level3">
 <h3 class="anchored" data-anchor-id="enchancement">Enchancement</h3>
-<p>Image enhancement is the procedure of improving the quality and information content of original data (Haldar, 2018). The table below explain each of the methods.</p>
+<p>Image enhancement is the procedure of improving the quality and information content of original data <span class="citation" data-cites="haldar2018">(<a href="references.html#ref-haldar2018" role="doc-biblioref">Haldar 2018</a>)</span>. The table below explain each of the methods.</p>
 <table class="caption-top table">
 <caption>Image Enhancement Methods</caption>
 <colgroup>
@@ -304,13 +324,24 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="application-correction-for-assessing-solar-pv-potential" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="application-correction-for-assessing-solar-pv-potential"><span class="header-section-number">3.2</span> Application: Correction for Assessing Solar PV Potential</h2>
-<p>The paper by Sakti et al.&nbsp;(2022) model the potential of solar PV development of each building in Bandung, Indonesia by considering the energy potential and energy needed to generate electricity. The paper use shortwave radiation to calculate the solar energy potential in each building, but because sunlight that reach the building is not fully optimum, several correction methods should be applied by using Aerosol Optical Depth (AOD), precipitation, and Land Surface Temperature (LST). I think this paper is very interesting to support the government goals in transitioning to renewable energy. It provides a depth analysis on the solar energy potential and the electricity that needs to be generated. In the analysis on the solar energy potential, the author provides hillshade analysis and atmospheric correction that might alter the sunlight in reaching the rooftop. However, the author assumes constant value of daily data and does not consider cloud and humidity in the atmospheric correction which I think is important because beside needing optimum sunlight, we also have to make sure that the sun is shining almost all year round for it to be effective. Another paper that I found regarding this topic is by Lodhi et al.&nbsp;(2024) that assess the solar PV potential using Mask R-CNN and DeepLabV3 deep learning models on high resolution Google Earth Imagery and generating DEM from 10 meter resolution Sentinel-1 for estimating solar radiation. Both papers have same goals with very different approaches, but still applies image correction before extracting the value of solar raditation. Lodhi et al.&nbsp;(2024) uses noise removal, radio metric calibration, and terrain correction to Sentinel-1. I think for assessing solar PV potential, radiometric correction especially atmospheric correction is very important as it is connected directly to sun radiation.</p>
+<p>The paper by <span class="citation" data-cites="sakti2022">(<a href="references.html#ref-sakti2022" role="doc-biblioref">Sakti et al. 2022</a>)</span> model the potential of solar PV development of each building in Bandung, Indonesia by considering the energy potential and energy needed to generate electricity. The paper use shortwave radiation to calculate the solar energy potential in each building, but because sunlight that reach the building is not fully optimum, several correction methods should be applied by using Aerosol Optical Depth (AOD), precipitation, and Land Surface Temperature (LST). I think this paper is very interesting to support the government goals in transitioning to renewable energy. It provides a depth analysis on the solar energy potential and the electricity that needs to be generated. In the analysis on the solar energy potential, the author provides hillshade analysis and atmospheric correction that might alter the sunlight in reaching the rooftop. However, the author assumes constant value of daily data and does not consider cloud and humidity in the atmospheric correction which I think is important because beside needing optimum sunlight, we also have to make sure that the sun is shining almost all year round for it to be effective. Another paper that I found regarding this topic is by <span class="citation" data-cites="lodhi2024">(<a href="references.html#ref-lodhi2024" role="doc-biblioref">Lodhi et al. 2024</a>)</span> that assess the solar PV potential using Mask R-CNN and DeepLabV3 deep learning models on high resolution Google Earth Imagery and generating DEM from 10 meter resolution Sentinel-1 for estimating solar radiation. Both papers have same goals with very different approaches, but still applies image correction before extracting the value of solar raditation. <span class="citation" data-cites="lodhi2024">(<a href="references.html#ref-lodhi2024" role="doc-biblioref">Lodhi et al. 2024</a>)</span> uses noise removal, radio metric calibration, and terrain correction to Sentinel-1. I think for assessing solar PV potential, radiometric correction especially atmospheric correction is very important as it is connected directly to sun radiation.</p>
 </section>
 <section id="reflection-the-overlook-importance-of-image-correction" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="reflection-the-overlook-importance-of-image-correction"><span class="header-section-number">3.3</span> Reflection: The Overlook Importance of Image Correction</h2>
 <p>As I saw earlier in the application of atmospheric and radiometric correction in extracting solar radiation for assessing solar PV potential, image correction is really importance to generating real value. However, I find it these corrections are rarely talked about in the remote sensing application paper. But maybe because these days, a lot of remote sensing products have already been applied with image correction. Still, it is still importance to understand about the effect of atmosphere to the reflectance and how to use proper correction methods in the images. Beside for assessing solar PV potential, I think image correction and enhancement also important when doing study about Urban Heat Island (UHI), carbon sequestration, or mineral detection.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-haldar2018" class="csl-entry" role="listitem">
+Haldar, Swapan Kumar. 2018. <span>“Photogeology, Remote Sensing, and Geographic Information System in Mineral Exploration.”</span> In, 47–68. Elsevier. <a href="https://doi.org/10.1016/B978-0-12-814022-2.00003-4">https://doi.org/10.1016/B978-0-12-814022-2.00003-4</a>.
+</div>
+<div id="ref-lodhi2024" class="csl-entry" role="listitem">
+Lodhi, Muhammad Kamran, Yumin Tan, Xiaolu Wang, Syed Muhammad Masum, Khan Muhammad Nouman, and Nasim Ullah. 2024. <span>“Harnessing Rooftop Solar Photovoltaic Potential in Islamabad, Pakistan: A Remote Sensing and Deep Learning Approach.”</span> <em>Energy</em> 304 (September): 132256. <a href="https://doi.org/10.1016/j.energy.2024.132256">https://doi.org/10.1016/j.energy.2024.132256</a>.
+</div>
+<div id="ref-sakti2022" class="csl-entry" role="listitem">
+Sakti, Anjar Dimara, Kalingga Titon Nur Ihsan, Tania Septi Anggraini, Zahratu Shabrina, Nugroho Adi Sasongko, Reza Fachrizal, Muhammad Aziz, et al. 2022. <span>“Multi-Criteria Assessment for City-Wide Rooftop Solar PV Deployment: A Case Study of Bandung, Indonesia.”</span> <em>Remote Sensing</em> 14 (12): 2796. <a href="https://doi.org/10.3390/rs14122796">https://doi.org/10.3390/rs14122796</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

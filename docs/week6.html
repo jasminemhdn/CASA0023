@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -231,13 +251,21 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="application-machine-learning-techniques-in-habitat-suitability" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="application-machine-learning-techniques-in-habitat-suitability"><span class="header-section-number">6.2</span> Application: Machine Learning Techniques in Habitat Suitability</h2>
-<p>Paper by Santoso et al.&nbsp;(2023) assess the suitability of the developed Grizzled leaf monkey habitat in Java Island, Indonesia using combination of Random Forest (RF), Support Vector Machine (SVM), and Maximum Entropy (MaxEnt). A total of 12 remote sensing product were used in this studies including MODIS LST, MODIS LC, CHIRPS, FLDAS, SRTM, HydroSHEDS, Landsat 8, VIIRS, Sentinel-5P and Worldpop. It is really impresive to me that nowadays image classification and machine learning methods are not only applied to land cover mapping, but for a variety use including habitat suitability. This paper give a comprehensive analysis by using massive dataset that assess the climate, topography, ecology, and anthropogenic factors to habitat suitability. They also integrating three different machine learning algorithms which I think can be good for eliminating limitation of each of the methods. However, I think it can be great if they use more technique in this integration rather than using unweighted one. I also like the layouting of the maps which is very creative and inspiring especially for Surili Habitat Against Population Prediction 2040. Things that I am curious about the method is thy why they use different vegetation index like NDVI, SAVI, and leaf area index because it potentially creating multicollinearity and affecting the result. I think it will be better if they can use the same procedure as Rahimian Boogar et al.&nbsp;(2019) in which they do proper data preprocessing and processing to predict habitat suitability of Juniperus spp. In the Southern Zagros Mountains of Iran by utilising SVM and MaxEnt. Both papers actually use massive dataset, but there are difference in parameters that they used in which Rahimian Boogar et al.&nbsp;(2019) divided the parameters into climate, topography, soil, and environmental factors. It will be interesting if Rahimian Boogar et al.&nbsp;(2019) also include anthropogenic factors in their study. Overall, I think what has been missing from both papers is that they only include AUC and ROC as accuracy assessment, it will be good if they include more accuracy assessment for more thorough analysis.</p>
+<p>Paper by <span class="citation" data-cites="santoso2023">(<a href="references.html#ref-santoso2023" role="doc-biblioref">Santoso et al. 2023</a>)</span> assess the suitability of the developed Grizzled leaf monkey habitat in Java Island, Indonesia using combination of Random Forest (RF), Support Vector Machine (SVM), and Maximum Entropy (MaxEnt). A total of 12 remote sensing product were used in this studies including MODIS LST, MODIS LC, CHIRPS, FLDAS, SRTM, HydroSHEDS, Landsat 8, VIIRS, Sentinel-5P and Worldpop. It is really impresive to me that nowadays image classification and machine learning methods are not only applied to land cover mapping, but for a variety use including habitat suitability. This paper give a comprehensive analysis by using massive dataset that assess the climate, topography, ecology, and anthropogenic factors to habitat suitability. They also integrating three different machine learning algorithms which I think can be good for eliminating limitation of each of the methods. However, I think it can be great if they use more technique in this integration rather than using unweighted one. I also like the layouting of the maps which is very creative and inspiring especially for Surili Habitat Against Population Prediction 2040. Things that I am curious about the method is thy why they use different vegetation index like NDVI, SAVI, and leaf area index because it potentially creating multicollinearity and affecting the result. I think it will be better if they can use the same procedure as <span class="citation" data-cites="rahimianboogar2019">(<a href="references.html#ref-rahimianboogar2019" role="doc-biblioref">Rahimian Boogar et al. 2019</a>)</span> in which they do proper data preprocessing and processing to predict habitat suitability of Juniperus spp. In the Southern Zagros Mountains of Iran by utilising SVM and MaxEnt. Both papers actually use massive dataset, but there are difference in parameters that they used in which <span class="citation" data-cites="rahimianboogar2019">(<a href="references.html#ref-rahimianboogar2019" role="doc-biblioref">Rahimian Boogar et al. 2019</a>)</span> divided the parameters into climate, topography, soil, and environmental factors. It will be interesting if <span class="citation" data-cites="rahimianboogar2019">(<a href="references.html#ref-rahimianboogar2019" role="doc-biblioref">Rahimian Boogar et al. 2019</a>)</span> also include anthropogenic factors in their study. Overall, I think what has been missing from both papers is that they only include AUC and ROC as accuracy assessment, it will be good if they include more accuracy assessment for more thorough analysis.</p>
 </section>
 <section id="reflection-remote-sensing-for-thematic-mapping" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="reflection-remote-sensing-for-thematic-mapping"><span class="header-section-number">6.3</span> Reflection: Remote Sensing for Thematic Mapping</h2>
 <p>As someone who really likes thematic mapping, I am extremely happy that remote sensing classification has been evolved to variety of topic such as habitat suitability. The method is not only glued to land cover analysis. Furthermore with the growth of machine learning, we do not have to manually create class based on AOI for doing unsupervised classification which also requires us interpret the analysis visually. But, unsupervised classification also provides a challenge because it depends on the availability of training dataset and the accuracy also depends on the quality of the dataset. Nevertheless, with the growth of dataset, I believe there will be more analysis that we can conduct using machine learning and remote sensing such as plastic waste detection in water bodies and informal settlement detection which I really interested.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-rahimianboogar2019" class="csl-entry" role="listitem">
+Rahimian Boogar, Abdolrahman, Hassan Salehi, Hamid Reza Pourghasemi, and Thomas Blaschke. 2019. <span>“Predicting Habitat Suitability and Conserving Juniperus Spp. Habitat Using SVM and Maximum Entropy Machine Learning Techniques.”</span> <em>Water</em> 11 (10): 2049. <a href="https://doi.org/10.3390/w11102049">https://doi.org/10.3390/w11102049</a>.
+</div>
+<div id="ref-santoso2023" class="csl-entry" role="listitem">
+Santoso, Cokro, Anjar Dimara Sakti, Ismail Al Faruqi, Kurnia Putri Adillah, Faza Iza Mahezs, and Salma Zhahira Maharani Suripto. 2023. <span>“Modeling Habitat Suitability for Endemic Grizzled Leaf Monkey (Presbytis Comata) Using Geospatial Machine Learning Approach.”</span> <em>Remote Sensing Applications: Society and Environment</em> 32 (November): 101067. <a href="https://doi.org/10.1016/j.rsase.2023.101067">https://doi.org/10.1016/j.rsase.2023.101067</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
